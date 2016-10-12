@@ -17,36 +17,72 @@ body, body *{
 #menu{   
     position: fixed;
     width: 100%;
-    height: 100px;
-    padding-top: 40px;
+    height: 75px;
+    padding-top: 25px;
     z-index: 1000;
+}
+
+
+
+#menu .navbar-logo{
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    display: none;
+}
+
+#menu button{
+    display: none;
+}
+
+button:focus{
+    outline: 0;
+}
+
+#menu div{
+    display: inline;
+    margin-left: 10px;
+    margin-top: 5px;   
+    position: absolute;
+    width: 250px;
+    font-size: 25px;
+    line-height: 26px;
+}
+
+#menu img{
+    height: 90px;
+
 }
 
 #menu ul{
     list-style: none;
     position: fixed;
     right: 0;
+    
 }
 
 #menu ul li{
     font-size: 20px;
     display: inline;
-    margin-right: 75px;
+    margin-right: 75px;   
+}
+
+#menu li a:hover{
+    border-bottom: white solid 1px;
+}
+
+#menu a, a:active, a:visited {
+    text-decoration:none;
+}
+
+#menu a{
+    color: white;
     border-bottom: rgba(0,0,0,0) solid 1px;
     transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-        
-}
-
-#menu ul li:hover{
-    border-bottom: white solid 1px;
-}
-
-#menu a{
-    color: white;
 }
 
 #menu a:hover{
@@ -64,13 +100,9 @@ body, body *{
     height: 100vh;
 }
 
-#intro #logo{
-    height: 200px;
-    width: auto;
-}
 
 .box{
-    position: absolute;
+    position: absolute; 
     top: 30%;
     left: 0;
     right: 0;
@@ -78,17 +110,24 @@ body, body *{
     margin-right: auto;
 }
 
+#intro #logo{
+    height: 200px;
+    width: auto;
+    display: none;
+}
+
 #cream{
     padding-top: 10px;
     color: white;
     font-size: 70px;
     line-height: 60px;
+    display: none;
 }
 
 #coffee{
     color: white;
     font-size: 24px;
-    
+    display: none;
 }
 
 .arrow{
@@ -111,8 +150,8 @@ body, body *{
 }
 
 #box1, #box2, #box3{
-    height: 325px;
     padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .header{
@@ -171,13 +210,186 @@ body, body *{
 }
 
 .footer{
-    height: 400px;
     background-color: #3f3f3f;
     color: white;
     padding: 40px 40px 0px 40px;
+    font-size: 17px;
 }
 
-.footer #copryright{
-    position: absolute;
-    bottom: 10px;
+
+.footer #social a{
+    margin: 30px;
 }
+
+#social{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+svg{
+    height: 30px;
+}
+
+a:hover svg path{
+    fill: #00aeef;
+}
+
+
+
+.footer #address{
+
+}
+
+.footer #hours{
+
+}
+
+.footer #map{
+    text-align: center;
+    margin-top: -50px;
+}
+
+.footer #map img{
+    height: 200px;
+}
+
+
+.footer #copyright{
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1000px){
+    #menu ul li{
+        margin-right: 50px;   
+    }
+    
+    .footer #details div{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer #map{
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    #menu ul li{
+        font-size: 20px;
+        display: inline;
+        margin-right: 25px;   
+    }    
+}
+
+
+@media (max-width: 767px) {
+    #menu{
+        background-color: #3f3f3f;
+        
+    }
+    
+    #menu img{
+        height: 75px;
+        margin-top: 5px;
+
+    }
+    
+    #menu .navbar-logo{
+        display: block;
+        left: 15px;
+        
+    }
+    
+    #menu .navbar-logo div{
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 7px;
+        z-index: 1000;
+        width: 200px;
+    }
+    
+    #menu button{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        display: block;
+    }
+    
+    #menu button img{
+        height: 25px;
+    }
+    
+    #menu ul{
+        background-color: #3f3f3f;
+        z-index: -1;
+        padding-left: 0px;
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin-top: 50px;
+        padding-top: 10px;
+    }
+    
+    #menu ul li{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;   
+    }
+    
+    #intro #logo{
+        height: 150px;
+    }
+    
+    #intro  #cream{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    #intro #coffee{
+        font-size: 17px;
+    }
+    
+    #quote{
+        font-size: 17px;
+    }
+    
+    .header .text{
+        text-align: right;
+        font-size: 30px;
+        line-height: 30px;
+        font-style: italic;
+        padding-right: 16px;
+    }
+
+    .header .vector img{
+        height: 90px;
+    }
+    
+    .box-content{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 125px;
+        text-align: center;
+        font-size: 18px; 
+    }
+    
+    .footer #social a{
+        margin: 15px;
+    }
+    
+    .footer #details div{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .footer #map{
+        margin: 0;
+    }
+}
+
+
+
