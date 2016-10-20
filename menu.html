@@ -11,68 +11,97 @@
 
     </head>
     
-    <body>
-        <div class="background-img"></div>
-        
-        <div id="menu">
-            <a href="#" class="navbar-logo"><img src="img/navbar-logo3.png" /><div>CREAM <br> COFFEE &amp; TEA SHOP</div></a>
+    <body>        
+        <div id="menu" style="background-color:#5B5B5B">
+            <a href="#" class="navbar-logo" style="display:inline"><img src="img/navbar-logo3.png" /><div>CREAM <br> COFFEE &amp; TEA SHOP</div></a>
             <button><img class="menu-button" src="img/menu-button.svg" /></button>
             <ul>
-                <li><a href="#" style="border-bottom: white 1px solid">HOME</a></li>
-                <li><a href="#">MENU</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#" style="border-bottom: white 1px solid">MENU</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">HOURS</a></li>
             </ul>
         </div>
-       
-        <div id="intro">
-            <div class="box">
-                <img id="logo" src="img/intro-logo.png" />
-                <div id="cream"><strong>CREAM</strong></div>
-                <div id="coffee"><strong>COFFEE &amp; TEA SHOP</strong></div>
-            </div>
-            <a href="#intro"><img class="arrow" src="img/arrow.png" /></a>
+         
+        <div class="food-border">
+            <div id="food-menu">
+                <div id="title"><strong>MENU</strong></div>
+                    <div class="items col-md-4">
+                        <h1><strong>coffee &amp; more</strong></h1>
+                        <ul>
+                            <li>freshly brewed coffee</li>
+                            <li>cafe au lait</li>
+                            <li>iced coffee</li>
+                            <li>cold brew</li>
+                            <li>chai tea latte</li>
+                            <li>hot chocolate</li>
+                        </ul>
+                    </div>
+                    <div class="items col-md-4">
+                        <h1><strong>espresso</strong></h1>
+                        <ul>
+                            <li>salted caramel latte</li>
+                            <li>white chocolate mocha</li>
+                            <li>mocha latte</li>
+                            <li>nutella latte</li>
+                            <li>latte</li>
+                            <li>cappuccino</li>
+                            <li>cortado</li>
+                            <li>macchiato</li>
+                            <li>espresso</li>
+                            <li>americano</li>
+                        </ul>
+                    </div>
+                    <div class="items col-md-4">
+                        <h1><strong>tea</strong></h1>
+                        <ul>
+                            <li>earl grey</li>
+                            <li>english breakfast</li>
+                            <li>fireside spice</li>
+                            <li>roasted chestnut</li>
+                            <li>jasmine</li>
+                            <li>moroccan mint</li>
+                            <li>oolong</li>
+                            <li>machu peach-u</li>
+                            <li>gold</li>
+                            <li>rooibos</li>
+                            <li>lavenderberry</li>
+                            <li>chamomile</li>
+                            <li>red berries</li>
+                            <li>evening in missoula</li>
+                        </ul>
+                    </div>
+                    <div class="items col-md-4">
+                        <h1><strong>iced tea</strong></h1>
+                        <ul>
+                            <li>black gold</li>
+                            <li>passion mango green tea</li>
+                            <li>moroccan mint</li>
+                            <li>red berries</li>
+                        </ul>
+                    </div>
+                    <div class="items col-md-4">
+                        <h1><strong>bagels</strong></h1>
+                        <ul>
+                            <li>plain</li>
+                            <li>everything</li>
+                            <li>cinnamon raisin</li>
+                            <li>wheat</li>
+                            <li>with jelly, butter, cream cheese</li>
+                        </ul>
+                    </div>
+                    <div class="items col-md-4">
+                        <h1><strong>pastries</strong></h1>
+                        <ul>
+                            <li>ipsum lorem</li>
+                            <li>dolor sit</li>
+                            <li>amet consectetur</li>
+                            <li>adipiscing elit</li>
+                            <li>sed do</li>
+                        </ul>
+                    </div>
 
-        </div>
-        
-        <div id="quote"><em>"lorem ipsum dolor sit amet, consectetur adipiscing."</em></div>
-        
-        <div id="box1">
-            <div class="header">
-                <div class="text">our<br>coffee</div>
-                <div class="vector"><img src="img/coffee-vector.png" /></div>
-            </div>
-            <div class="box-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </div>
-        
-        </div>
-        
-        <div id="box2">
-            <div class="header">
-                <div class="vector"><img src="img/tea-vector.png" /></div>
-                <div class="text">our<br>tea</div>
 
-            </div>
-            <div class="box-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </div>
-        </div>
-        
-        <div id="box3">
-            <div class="header">
-                <div class="text">our<br>pastries</div>
-                <div class="vector"><img src="img/pastries-vector.png" /></div>
-
-            </div>
-            <div class="box-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </div>
         </div>
         
@@ -186,30 +215,6 @@
         
         <script>
             $(document).ready(function(){
-                
-                $("#logo").fadeIn(2000);
-                $("#cream").delay(500).fadeIn(2000);
-                $("#coffee").delay(500).fadeIn(2000);
-                
-                
-                //navbar logo appear on scroll
-                var mainbottom = $('#menu').offset().top + $('#menu').height();
-                $(window).on('scroll',function(){
-                    var stop = Math.round($(window).scrollTop());
-
-                    if (stop > mainbottom) {
-                        $('#menu').css('background-color','#5B5B5B');
-                        $('.navbar-logo').fadeIn(100);
-                    } 
-                    else {
-                        if($(window).width() > 767){
-                            $('.navbar-logo').hide();
-                            $('#menu').css('background','none');
-                        }
-                    }
-                });
-                    
-                
                 $('.menu-button').click(function(){
                     $('#menu ul').fadeToggle(100);
                 });
@@ -219,10 +224,7 @@
                     console.log($(window).width());
                     if($(window).width() > 767){
                         $('#menu ul').show();
-                        if($(window).scrollTop() == 0){
-                            $('#menu').css('background-color','transparent');
-                            $('.navbar-logo').hide();
-                        }
+                        
                         
                     }
                     else{

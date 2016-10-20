@@ -3,7 +3,7 @@ body, body *{
 }
 
 .background-img { 
-  background: url(../img/o.png) no-repeat center center fixed; 
+  background: url(../img/o2.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,7 +144,7 @@ button:focus{
     height: 50px;
     text-align: center;
     line-height: 50px;
-    background-color: gray;
+    background-color: #3A4757;
     color: white;
     font-size: 20px;
 }
@@ -190,8 +190,12 @@ button:focus{
     font-size: 23px; 
 }
 
+#box1{
+    background-color: #f5f5f5;
+}
+
 #box2{
-    background-color: #00aeef;
+    background-color: #599BB7;
     color: white;
 }
 
@@ -205,12 +209,16 @@ button:focus{
     height: 70px;
 }
 
+#box3{
+    background-color: #f5f5f5;
+}
+
 #box3 img{
     height: 80px;
 }
 
 .footer{
-    background-color: #3f3f3f;
+    background-color: #3A4757;
     color: white;
     padding: 40px 40px 0px 40px;
     font-size: 17px;
@@ -231,7 +239,7 @@ svg{
 }
 
 a:hover svg path{
-    fill: #00aeef;
+    fill: #599BB7;
 }
 
 
@@ -260,6 +268,36 @@ a:hover svg path{
     padding-left: 10px;
 }
 
+
+.food-border{
+    width: 100%;
+    margin-top: 75px;
+    display: inline-block;
+    text-align: center;
+}
+
+#food-menu{
+    background-color: #599BB7;
+    margin: 30px;
+    color: white;
+    padding: 30px;
+    box-shadow: 10px 10px 10px lightgray;
+    overflow: auto;
+}
+
+
+#title{
+    font-size: 60px;
+    border-bottom: 1px solid white;
+}
+
+
+.items ul{
+    list-style-type: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
 @media (max-width: 1000px){
     #menu ul li{
         margin-right: 50px;   
@@ -286,7 +324,7 @@ a:hover svg path{
 
 @media (max-width: 767px) {
     #menu{
-        background-color: #3f3f3f;
+        background-color: #2F537F;
         
     }
     
@@ -324,7 +362,7 @@ a:hover svg path{
     }
     
     #menu ul{
-        background-color: #3f3f3f;
+        background-color: #5B5B5B;
         z-index: -1;
         padding-left: 0px;
         text-align: center;
@@ -388,6 +426,10 @@ a:hover svg path{
     
     .footer #map{
         margin: 0;
+    }
+    
+    #title{
+        font-size: 45px;
     }
 }
 
